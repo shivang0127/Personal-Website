@@ -1,0 +1,213 @@
+
+*{box-sizing:border-box}
+
+
+body{
+  font-family: arial;
+  color: rgb(34, 34, 34);
+  background-color: rgb(170, 125, 170);
+  line-height: 1.6;
+  margin:0px;
+  padding:0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+hr{
+  border-top-width: 2px;
+  border-top-style: dotted;
+  border-top-color: rgb(162, 71, 185);
+}
+
+#header{
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+  background-color: rgb(55, 13, 55);
+  height: 155px;
+}
+
+.title{
+  margin: 0px 0px 12px 0px;
+}
+
+.nav{
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  display:inline-block;
+  padding: 8px 30px 8px 30px;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  margin-left: 5px;
+  background-color: rgb(101, 31, 148);
+  transition: box-shadow 0.15s, background-color 0.15s;
+}
+
+.button:hover{
+  background-color: rgb(169, 82, 169);
+  box-shadow: 0px 0px 15px rgb(186, 104, 200);
+}
+
+.container{ 
+  margin: 24px 0px;
+  padding: 0px 16px;
+}
+
+.card{
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.heading-1{
+  color: rgb(37, 11, 35);
+  text-align: center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
+}
+
+.heading-3{
+  color: rgb(128, 0, 128);
+}
+
+.home-img img{
+  max-width: 300px;
+}
+
+.footer{
+  text-align: center; 
+  color: white;
+  background-color: rgb(27, 8, 26);
+  padding-top: 16px;
+  height: 155px;
+}
+
+.footer-notes{
+  text-align: left;
+  margin: 0px 0px 4px 40px;
+}
+
+.footer-links a{
+  color: rgb(199, 192, 198);
+  font-size: 15px; 
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.flowchart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */  /* Wanna use for mobile??????*/
+}
+
+.flowchart-box{
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(101, 31, 148);
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  /* min-width: 120px; */ /*For smaller screens... should change it???*/
+  box-shadow: 0px 0px 8px rgba(101, 31, 148, 0.4);
+  margin: 5px;
+}
+
+.subject-box{
+  background: rgb(240, 236, 255);
+  border-width: 1px;
+  border-style: dashed;
+  border-color: rgb(101, 31, 148);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.arrow {
+  font-size: 24px;
+  color: rgb(101, 31, 148);
+}
+
+li p{
+  margin: 4px 0px 0px 20px;
+  font-size: 15px;
+}
+
+.muted{
+  color: rgb(102, 102, 102);
+  font-size: 15px;
+}
+
+.table{
+  width:100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td{
+  border-width: 1px; 
+  border-style: solid;
+  border-color: rgb(237, 230, 228);
+  padding:8px;
+  text-align: left;
+}
+
+.table th{
+  background:rgb(242, 245, 248);
+}
+
+.heading-center{
+  text-align: center;
+}
+
+.table-term-headings{
+  background: rgb(230, 230, 250); 
+  font-weight: bold;
+}
+
+.future-summary{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.summary-section{
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(101, 31, 148);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(101, 31, 148, 0.3);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.summary-section h3{
+  margin-top: 0;
+}
+
+/* Small screens */
+@media (max-width: 700px){
+  .grid{grid-template-columns:1fr}
+}
+

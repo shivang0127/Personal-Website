@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comments</title>
+  <link rel="stylesheet" href="websystems.css">
+</head>
+<body>
+  <header id="header">
+    <h1 class="title">Assessment Task 4: Web Systems Website</h1>
+        <nav class="nav">
+      <a href="index.html" class="button">Home</a>
+      <a href="past.html" class="button">Past Experiences</a>
+      <a href="future.html" class="button">Future Plans</a>
+      <a href="comments.html" class="button">Comments</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+    <h1 class="heading-1">Website Comments & Analysis</h1>
+    <hr>
+
+  <h3 class="heading-3">1. Page Overview</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Page</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Home</td>
+          <td>A very brief introduction of myself. This page acts as a navigation hub for the rest of the website or other pages.</td>
+        </tr>
+        <tr>
+          <td>Past</td>
+          <td>Lists out the previous experience of myself in academia, specifically in the field of computer science and programming along with its timeline.</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>Outlines future study and career goals, represented through plans and tables.</td>
+        </tr>
+        <tr>
+          <td>Comments</td>
+          <td>Provides a detailed analysis of the website's structure, design, CSS, along with its accessibility features.</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    
+    <h3 class="heading-3">2. CSS Breakdown</h3>
+    <p>
+      This part aims at breaking down all the Elements and Classes styled within the CSS code 
+      to modify the design and looks of the webpages.
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>*</td>
+          <td>Universal Selector</td>
+          <td>Applies consistent sizing to all the elements.</td>
+        </tr>
+
+        <tr>
+          <td>body</td>
+          <td>Element</td>
+          <td>Works on font, text color, backrgound color, and all the other properties of the chief body.</td>
+        </tr>
+
+        <tr>
+          <td>main</td>
+          <td>Element</td>
+          <td>Sizes and styles the main content area between the header and the footer.</td>
+        </tr>
+
+        <tr>
+          <td>hr</td>
+          <td>Element</td>
+          <td>Creates a dotted separator (a line) right after the heading on each page.</td>
+        </tr>
+
+        <tr>
+          <td>#header</td>
+          <td>ID</td>
+          <td>Styles the header of the page and the text and buttons within it.</td>
+        </tr>
+
+        <tr>
+          <td>.title</td>
+          <td>Class</td>
+          <td>Sets the position of the title of each webpage.</td>
+        </tr>
+
+        <tr>
+          <td>.nav</td>
+          <td>Class</td>
+          <td>
+            A class for making all the links at the top (in the form of buttons) centered.
+            Also makes everything within this class a Flexbox container so that the behaviour
+            of the links is governed by this even when they're in the form of buttons.  
+          </td>
+        </tr>
+
+        <tr>
+          <td>.button</td>
+          <td>Class</td>
+          <td>Styles the navigation links in the form of buttons with round corners and correct positioning.</td>
+        </tr>
+
+        <tr>
+          <td>.button:hover</td>
+          <td>Pseudo-Class</td>
+          <td>Created specifically to add glow to the button links when hovered over.</td>
+        </tr>
+
+        <tr>
+          <td>.container</td>
+          <td>Class</td>
+          <td>Used to wrap the main page content in proper margin and padding.</td>
+        </tr>
+
+        <tr>
+          <td>.card</td>
+          <td>Class</td>
+          <td>This class simply creates a white box with padding and rounded corners for grouped content.</td>
+        </tr>
+
+        <tr>
+          <td>.heading-1</td>
+          <td>Class</td>
+          <td>A class created specifically to style the h1 tag by modifying its positioning and color.</td>
+        </tr>
+
+        <tr>
+          <td>.about</td>
+          <td>Class</td>
+          <td>
+            Used for generating a two-column grid for the "About Me" section on the home Page
+            so that the image and the text can be placed correctly.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.heading-3</td>
+          <td>Class</td>
+          <td>Similar to the .heading-1 class, this is created to style the h3 tag.</td>
+        </tr>
+
+        <tr>
+          <td>.home-img img</td>
+          <td>Class &#38; Element</td>
+          <td>Limits the size of the image to fit on the page.</td>
+        </tr>
+
+        <tr>
+          <td>.footer</td>
+          <td>Class</td>
+          <td>
+            Styles the footer containing additional accessibility links to other pages 
+            as well as meta-info.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.footer-notes</td>
+          <td>Class</td>
+          <td>Aligns the notes in the footer to the left, along with adding adequate margin.</td>
+        </tr>
+
+        <tr>
+          <td>.footer-links a</td>
+          <td>Class + Element</td>
+          <td>
+            Styles all the anchor links within the anchor tag by changin their color and 
+            changing the default underline property disappear.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.footer-links a:hover</td>
+          <td>Pseudo-Class</td>
+          <td>
+            When the cursor is hovered over the footer links, this class styles them such that 
+            links glow and change color to a brigher white.</td>
+        </tr>
+
+        <tr>
+          <td>.flowchart</td>
+          <td>Class</td>
+          <td>Creates a flexbox layout for the flowchart within the past page.</td>
+        </tr>
+
+        <tr>
+          <td>.flochart-box</td>
+          <td>Class</td>
+          <td>Customizes the content (especially the text) within each box of the flowchart.</td>
+        </tr>
+
+        <tr>
+          <td>.subject-box</td>
+          <td>Class</td>
+          <td>
+            Changes the boxes within which the names of the subjects are such that the 
+            boundary is dashed.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.arrow</td>
+          <td>Class</td>
+          <td>Changes the size and color of the arrow.</td>
+        </tr>
+
+        <tr>
+          <td>.muted</td>
+          <td>Class</td>
+          <td>
+            The text within this class appears muted grey.
+            Used for secondary text.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.table</td>
+          <td>Class</td>
+          <td>
+            Collapses the borders of the tables so that no gap appears between the cells,
+            and also formats the table to full width.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.table th, .table td</td>
+          <td>Grouped Class + Element</td>
+          <td>
+            Customizes specifically the heading and the text within the header and each cell
+            to have border, padding and proper alignment.
+          </td>
+        </tr>
+
+        <tr>
+          <td>.table th</td>
+          <td>Class + Element</td>
+          <td>Used to differentiate the table header by making it have distinct color.</td>
+        </tr>
+
+        <tr>
+          <td>.heading-center</td>
+          <td>Class</td>
+          <td>Centers all the heading text.</td>
+        </tr>
+
+        <tr>
+          <td>.table-term-headings</td>
+          <td>Class</td>
+          <td>Styles the term headings with lavendar backgrounds.</td>
+        </tr>
+
+        <tr>
+          <td>.future-summary</td>
+          <td>Class</td>
+          <td>Creates a three-column grid layout for the summary within the future page.</td>
+        </tr>
+
+        <tr>
+          <td>.summary-section</td>
+          <td>Class</td>
+          <td>Customizes each box within the summary section to have purple borders and a pale shadow.</td>
+        </tr>
+
+        <tr>
+          <td>.summary-section h3</td>
+          <td>Class + Element</td>
+          <td>Specifically styles heading-3 within the summary section to not have any margin at the top.</td>
+        </tr>
+
+        <tr>
+          <td>@media (max-width:700px)</td>
+          <td>Media Query</td>
+          <td>Applies a style such that the content can adapt to different screen sizes.</td>
+        </tr>
+
+        <tr>
+          <td>li p</td>
+          <td> Descendant Selector</td>
+          <td>Styles the paragraph tag inside lists with indent, spacing, and smaller font.</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    
+    <h3 class="heading-3">3. Design & Aesthetics</h3>
+    <ul>
+      <li>
+        Initially, in my mind I had a Theme inspired by <strong>Minecraft</strong> which would have the header and footer as obsidian blocks
+        and the central background as the nether portal texture.
+      </li>
+      <li>
+        However, I realized (after raising a question in the discussion board) that using such a theme can lead to copyright infringement, 
+        due to which I scraped that idea.
+      </li>
+      <li>As I had already coded quite a large part of the website before making that change, I decided to keep the colors and just remove the copyright-ed images.</li>
+      <li>Color scheme:
+        <div style="display:inline-block;width:20px;height:20px;background:rgb(101,31,148)"></div> Purple buttons,
+        <div style="display:inline-block;width:20px;height:20px;background:rgb(255,255,255);border:1px solid #ccc"></div> White cards/text,
+        <div style="display:inline-block;width:20px;height:20px;background:rgb(0,0,0)"></div> Dark contrasts.
+      </li>
+      <li>
+        Consistent typography: used the Arial font style across all the pages to make the text appear consistent and only modified the text 
+        in certain areas with changed color or font-size instead of changing the entire font-style.</li>
+      <li>Used larger font sizes for headings to ensure hierarchy.</li>
+      <li>Hover glow effects improve interactivity without heavy animation.</li>
+    </ul>
+
+    <h3 class="heading-3">4. Accessibility & Compatibility</h3>
+    <ul>
+      <li>Works with CSS disabled (content still visible and navigable).</li>
+      <li>The image includes a descriptive <code>alt</code> text.</li>
+      <li>Font sizes and line spacing are readable.</li>
+      <li>Responsive design tested on smaller screens.</li>
+    </ul>
+
+    <h3 class="heading-3">5. Evaluation of the Site</h3>
+    <p>
+      This is the first website I have ever created, yet I am somewhat satisfied with the result as I spent countless hours on it and it didn't turn out so bad afterall!
+      The site succeeds in being visually engaging while maintaining clarity and usability. Its strongest aspects include the consistent layout, thematic design, and responsiveness. 
+      I have tried using as many different CSS features as I could find on the internet that were relevant to this assignment, such as tables, different effects on links, 
+      proper alignment of divs and text, links to other webpages, flowcharts, cards, etc which not only helped me make this website look and flow better, but 
+      also improved my web development skills a ton.
+    </p>
+
+    <p>
+      Possible area of improvement in my view could be less text, as I belive I did write a lot in certain pages which was not needed... Other than that I believe the
+      website fulfils all the criteria and satisfies the specification well.
+    </p>
+  </section>
+
+
+  </main>
+
+  <footer class="footer">
+
+    <p class="footer-notes">Website by Shivang Sharma</p>
+    <p class="footer-notes">Subject: 31268 &#9679; Web Systems</p>
+    <p class="footer-notes">University of Technology Sydney</p>
+
+    <nav class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="past.html">Past Experiences</a> |
+      <a href="future.html">Future Plans</a> |
+      <a href="comments.html">Comments</a>
+    </nav>
+
+  </footer>
+</body>
+</html>
